@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{
+    background: linear-gradient(-45deg,#7eadce,#235477);
+    height: 750px;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.196);
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+.burger{
+    visibility: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    position: fixed;
+    transition: ease-in-out 1s;
+}
+.burger a{
+    transition: color 0.3s ease;
+}
+.burger input{
+    display: block;
+    opacity: 0;
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+}
+
+.nav2{
+    /* visibility: hidden; */
+    /* height: 0;
+    padding: 0 !important;
+    font-size: 0; */
+    margin-top: -400px !important;
+    position: absolute;
+    width: 80vw;
+    margin: 13px 0 0 52px;
+    padding: 50px;
+    padding-top: 27px;  
+    background:#235477;
+    list-style-type: none;
+    transform: translate(-100%, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 1s;
+    z-index: 3 !;
+}
+.burger input[type=checkbox]:checked ~ .nav2 {
+    /* visibility: visible; */
+    margin-top:18px !important;
+    /* height: 500px;
+    padding: 10px 0 !important;
+    font-size: 22px; */
+}
+.nav li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+.nav-list {
+    width: 50vw;
+    display: flex;
+    align-items:center ;
+    transition: .3s ease;
+
+}
+.nav-list ul {
+list-style: none;
+width: 100%;
+transform: translateY(-20%);
+text-align: center;
+transition: .3s ease;
+}
+
+.navbar{
+    background: linear-gradient(-45deg,#235477,#6097BF);
+    padding: 12px;
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.338);
+    display: flex;
+}
+#cyberpro{
+    width: 273px;
+    margin-left: 20%;
+    font-size: 50px;
+    font-weight: 700;
+}
+.nav1{
+    font-size: 23px;
+    font-weight:lighter;
+    display: flex;
+    margin-left: 20%; 
+    position: absolute;
+    margin-top: 17px;
+    transition: .3s ease;
+}
+.nav1 a{
+    margin-right: 30px;
+    display: inline-flex;
+    position: relative;
+}
+.nav1 li a:hover::after{
+    transform: scaleX(1)
+}
+.nav1 li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -6px;
+    background-color: #ffffff;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+
+.maintext{
+    padding-top: 14%;
+    padding-left: 21%;
+    color: white;
+    height: 45%;
+}
+.h1hire{
+    font-size: 60px;
+    width: 40%;
+    font-weight: 100;
+}
+.iamweb{
+    letter-spacing: 9px;
+}
+.img{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+.port{
+    padding: 15px;
+    background: linear-gradient(-45deg,#235477,#6097BF);
+    margin-top: 14px;
+    margin-left: 0%;
+    position: absolute;
+    width: 16%;
+    text-align: center;
+    letter-spacing: 10px;
+    transition: 1s;
+    transform-origin: right;
+    z-index: 3;
+}
+.port:hover{
+    background: linear-gradient(-45deg,#6097BF,#235477);
+    border: 1px solid white;
+    transition: 1s;
+    transform-origin: right;
+    padding: 20px;
+}
+.about{
+    background: linear-gradient(90deg,#bbd2e3,rgb(255, 255, 255));
+    height: 600px;
+}
+.aboutme{
+    left: 22%;
+    position: absolute;
+    top: 110%;
+    width: 25vw;
+    color:#15354b
+}
+.resume{
+    padding: 15px;
+    font-size: 13px;
+    background: linear-gradient(-45deg,#235477,#6097BF);
+    position: absolute;
+    width: 72%;
+    text-align: center;
+    letter-spacing: 8px;
+    transition: 1s;
+    transform-origin: right;
+    margin-top: 10px;
+}
+.resume:hover{
+    background: #23547700;
+    border: 1px solid white;
+    color: rgb(27, 27, 27);
+    border-color: rgb(27, 27, 27);
+    transform-origin: right;
+    padding: 20px;
+}
+.img2{
+    position: absolute;
+    top: 56%;
+    left: 145%;
+    width: 400px;
+}
+.blue{
+    padding: 100px;
+    padding-bottom: 73px;
+    background-color:#235477;
+    position: absolute;
+    margin-left: 208%;
+}
+.services{
+    height: 500px;
+    background: linear-gradient(90deg,#bbd2e3,rgb(255, 255, 255));
+    text-align: center;
+    color:#15354b
+}
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: rgb(236, 240, 255);
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front1, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(45deg,#6097BF,#235477);
+    color: rgb(236, 240, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flip-card-front1 {
+    background-image: url(https://en.freejpg.com.ar/asset/900/22/2270/F100029914.jpg);
+    background-size: cover;
+    color: rgb(236, 240, 255);
+    text-shadow: 2px 2px 30px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .flip-card-back {
+    background: linear-gradient(-45deg,#6097BF,#235477);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.hireme{
+    height: 200px;
+    background-color:#6097BF;
+    text-align: center;
+    color: white;
+}
+.hireme h2{
+    font-size: 40px ;
+}
+#hireme-nav{
+    padding: 15px;
+    border: 1px solid white;
+    background: linear-gradient(-45deg,#6097BF,#235477);
+    margin-top: 16px;
+    width: 16%;
+    text-align: center;
+    letter-spacing: 10px;
+    transition: 1s;
+}
+#hireme-nav:hover{
+    background: linear-gradient(45deg,#6097BF,#235477);
+    border: 1px solid white;
+    padding: 20px;
+}
+.contact{
+    background-color: #235477;
+    color: #f1f1f1;
+    height: 250px;
+    text-align: center;
+}
+.contact h2{
+    font-size: 40px;
+}
+.social{
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+@media only screen and (max-width: 768px){
+    .h1hire{
+        width: 90%;
+        margin-top: 10%;
+        font-size: 50px;
+    }
+    .maintext{
+        padding-left: 20px;
+    }
+    .port{
+        width: 35%;
+    }
+    .img{
+        z-index: 1;
+        right: 0;
+        width: 151%;
+        margin-top: -42%;
+        margin-left: -1%;
+        position: relative;
+    }
+    .aboutme{
+    left: 10%;
+    position: absolute;
+    top: 88%;
+    width: 54vw;
+    margin-top: 20px;
+    }
+    .img2{
+        position: absolute;
+        top: 170%;
+        left: 4%;
+        width: 309px;
+    }
+    .blue{
+    padding: 108px;
+    padding-bottom: 31px;
+    background-color: #235477;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: 74%;
+    }
+    .services{
+        height: 430px;
+    }
+    .hireme{
+        height: 270px;
+    }
+    .hireme h2{
+        width: 99%;
+    }
+    .navbar{
+        height: 4%;  
+    }
+    #cyberpro span{
+        font-size: 65%;
+    }
+    #cyberpro{
+        margin-left: 2%;
+        top: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .nav1{
+        display: none;
+    }
+    .burger{
+        visibility: visible;
+        font-size: 35px;
+        right: 46px;
+        position: absolute;
+        top: 20px;
+        color: white;
+    }
+}
