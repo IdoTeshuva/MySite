@@ -48,18 +48,19 @@ a:visited{
     margin: 13px 0 0 52px;
     padding: 50px;
     padding-top: 27px;  
-    background:#235477;
+    background: linear-gradient(-45deg,#235477,#6097BF);
     list-style-type: none;
     transform: translate(-100%, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
     transition: ease-in-out 1s;
-    z-index: 3 !;
+    z-index: 3 ;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.196);
 }
 .burger input[type=checkbox]:checked ~ .nav2 {
     /* visibility: visible; */
-    margin-top:18px !important;
+    margin-top:16px !important;
     /* height: 500px;
     padding: 10px 0 !important;
     font-size: 22px; */
@@ -341,6 +342,9 @@ transition: .3s ease;
         margin-left: -1%;
         position: relative;
     }
+    .flip-card:visited .flip-card-inner {
+        transform: rotateY(180deg);
+      }
     .aboutme{
     left: 10%;
     position: absolute;
@@ -395,3 +399,4 @@ transition: .3s ease;
         color: white;
     }
 }
+
