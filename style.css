@@ -395,7 +395,7 @@ transition: .3s ease;
         font-size: 35px;
         right: 46px;
         position: absolute;
-        top: 20px;
+        top: 1vh;
         color: white;
     }
 }
