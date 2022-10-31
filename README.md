@@ -1,4 +1,4 @@
-# MySite
+# MySite Project
 
 This is my second project using HTML and CSS. It was made 3 weeks into my FullStack course. 
 <br/>
